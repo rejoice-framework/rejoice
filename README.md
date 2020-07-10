@@ -1551,7 +1551,7 @@ class ProcessBalanceRequest extends Menu
 ### Inserting Paginate forward actions
 ### Inserting Paginate back actions
 
-<style>
+<!-- <style>
   .note {
     padding: 5px 30px;
     margin: 20px auto;
@@ -1576,4 +1576,4 @@ class ProcessBalanceRequest extends Menu
   .note-danger {
     background-color:rgba(255,0,0,0.1); color:rgba(255,10,0,1);
   }
-</style>
+</style> -->
