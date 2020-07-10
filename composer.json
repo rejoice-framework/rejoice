@@ -20,17 +20,17 @@
         }
     ],
     "minimum-stability": "dev",
-  "config": {
-	"optimize-autoloader": true
-  },
+    "config": {
+        "optimize-autoloader": true
+    },
     "autoload": {
-		"psr-4": {
+        "psr-4": {
             "Prinx\\App\\": "app/"
-		},
-		"scripts": {
-            "post-root-package-install": [
-				"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-			]
         }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
     }
 }
