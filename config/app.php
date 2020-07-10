@@ -6,7 +6,7 @@ return [
     /*
      * Unique identifier for this application.
      */
-    'id' => env('APP_ID', 'info_sevo_lockdown'),
+    'id' => env('APP_ID', 'rejoice_' . rand(1, 9999999)),
 
     /*
      * The environment of the application
@@ -16,7 +16,7 @@ return [
     /*
      * If the application can send SMS, specify the sender name to use.
      */
-    'sms_sender_name' => env('SMS_SENDER_NAME', 'INFOSEVO'),
+    'sms_sender_name' => env('SMS_SENDER_NAME', ''),
 
     /*
      * If the application can send SMS, specify the SMS api endpoint to use.
