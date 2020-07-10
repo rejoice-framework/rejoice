@@ -10,7 +10,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Prinx\Rejoice\ConsoleApp;
+use Prinx\Rejoice\Console\ConsoleApp;
 
 $console = new ConsoleApp;
 $console->run();
