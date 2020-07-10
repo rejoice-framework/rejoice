@@ -1,0 +1,28 @@
+#1 [CRITICAL] [Wed, 08 07 2020, 00:21:15]
+Class 'Prinx\Rejoice\FileSession' not found
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\rejoice\src\Foundation\Kernel.php:336
+
+#2 [CRITICAL] [Wed, 08 07 2020, 00:23:57]
+Class 'Prinx\Rejoice\Foundation\FileSession' not found
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\rejoice\src\Foundation\Kernel.php:336
+
+#3 [CRITICAL] [Wed, 08 07 2020, 10:56:30]
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '233558148715@infosevo.com' for key 'users_email_unique'
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\phputils\src\DB.php:91
+
+#4 [CRITICAL] [Wed, 08 07 2020, 10:58:02]
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '233558148715@infosevo.com' for key 'users_email_unique'
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\phputils\src\DB.php:91
+
+#5 [CRITICAL] [Wed, 08 07 2020, 11:06:13]
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '233558148715@infosevo.com' for key 'users_email_unique'
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\phputils\src\DB.php:91
+
+#6 [CRITICAL] [Wed, 08 07 2020, 11:22:09]
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '233558148715@infosevo.com' for key 'users_email_unique'
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\phputils\src\DB.php:91
+
+#7 [CRITICAL] [Wed, 08 07 2020, 11:30:44]
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '233558148715@infosevo.com' for key 'users_email_unique'
+in file F:\laragon\www\ussd\ussd-infosevo-lockdown\vendor\prinx\phputils\src\DB.php:91
+

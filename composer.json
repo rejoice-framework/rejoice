@@ -1,0 +1,36 @@
+{
+    "name": "prinx/rejoice",
+    "description": "Rejoice building USSD applications",
+    "type": "project",
+    "require": {
+        "prinx/rejoice-framework": "dev-master",
+        "prinx/dotenv": "0.4.0",
+        "prinx/phputils": "dev-master",
+        "symfony/console": "5.1"
+    },
+    "require-dev": {
+        "prinx/ussd-simulator": "dev-master",
+        "phpunit/phpunit": "9.2.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prince Dorcis",
+            "email": "princedorcis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+  "config": {
+    "optimize-autoloader": true
+  },
+    "autoload": {
+		"psr-4": {
+            "Prinx\\App\\": "app/"
+		},
+		"scripts": {
+            "post-root-package-install": [
+				"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+			]
+        }
+    }
+}
