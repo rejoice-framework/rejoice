@@ -3,17 +3,18 @@ namespace App\Menus;
 
 class Welcome extends Menu
 {
+
     public function message()
     {
-        return 'It works :D';
+        return "Welcome to Rejoice :)";
     }
 
     public function actions()
     {
         return [
             '1' => [
-                'display' => 'End',
-                'next_menu' => '__end',
+                'display' => 'Say hello!',
+                'next_menu' => 'get_name',
             ],
         ];
     }

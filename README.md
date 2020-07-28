@@ -47,7 +47,7 @@
     - [The paginator required methods](#the-paginator-required-methods)
       - [`PaginationFetch`](#paginationfetch)
       - [`PaginationTotal`](#paginationtotal)
-      - [`paginationInsertActions`](#paginationinsertactions)
+      - [`itemAction`](#itemAction)
   - [Validation rules](#validation-rules)
     - [alphabetic](#alphabetic)
     - [minLength](#minlength)
@@ -929,7 +929,7 @@ $this->channel(); // Will be USSD by default.
 ```
 ### Parameters defined in the `config/app.php` file
 ```php
-$this->params('param_name'); // Will be USSD by default.
+$this->config('app.param_name'); // Will be USSD by default.
 ```
 
 ### Any other request POST parameters
@@ -960,11 +960,11 @@ The second type of pagination called the `hard-pagination` is the one that requi
 #### `PaginationFetch`
 Retrieve the data from the database. Must return the retrieved data.
 
-#### `PaginationTotal`
+#### `PaginationCountAll`
 Must Return the total of rows fetched from the database.
 
-#### `paginationInsertActions`
-When using the paginator trait, instead of the `actions` methods, you will use the `paginationInsertActions` method to specify how to insert the actions in your menu. This method will be used under the hood by the actions method to insert the actions automatically for you. 
+#### `itemAction`
+When using the paginator trait, instead of the `actions` methods, you will use the `itemAction` method to specify how to insert the actions in your menu. This method will be used under the hood by the actions method to insert the actions automatically for you. 
 **Example**
 ```php
 namespace App\Menus;
@@ -978,19 +978,15 @@ class BetsHistory extends Menu
     /**
      * Number of items to display per page
      */
-    protected $paginationTotalToShowPerPage = 4;
+    protected $maxItemsPerPage = 4;
 
     public function message()
     {
-        $total = $this->paginationTotal();
-
-        if (!$total) {
+        if (!$this->paginationTotal()) {
             return "You don't have any bet.";
-        } elseif ($this->paginationTotalShowedOnCurrentPage()) {
+        } else {
             return $this->isPaginationFirstPage() ? 'Your betting history' : '';
         }
-
-        return 'Last page.';
     }
 
   /**
@@ -1007,12 +1003,12 @@ class BetsHistory extends Menu
    * @param string $option
    * @return array
    */
-    public function paginationInsertAction($row, $option)
+    public function itemAction($row, $option)
     {
         return [
             $option => [
                 'message' => 'Bet ' . $row['id'],
-                'next_menu' => 'betting_details',
+                'next_menu' => 'bet::bet_details',
                 'save_as' => $row['id'],
             ],
         ];
@@ -1037,7 +1033,7 @@ class BetsHistory extends Menu
 
         $offset = $this->lastRetrievedId();
         $userId = $this->user('id');
-        $limit = $this->paginationTotalToShowPerPage();
+        $limit = $this->maxItemsPerPage();
 
         $req->bindParam('offset', $offset, \PDO::PARAM_INT);
         $req->bindParam('initiator_id', $userId);
@@ -1056,7 +1052,7 @@ class BetsHistory extends Menu
      * 
      * @return  int
      */
-    public function paginationTotal()
+    public function paginationCountAll()
     {
         if ($total = $this->paginationGet('total')) {
             return $total;
@@ -1077,8 +1073,8 @@ class BetsHistory extends Menu
 }
 ```
 The paginator makes available some methods for our use:
-- `paginationTotalToShowPerPage` The maximum number of items that can be showed on the pagination screen; It's configured as protected property of the menu entity;
-- `paginationTotalShowedOnCurrentPage` The actual number of items showed on the current screen;
+- `maxItemsPerPage` The maximum number of items that can be showed on the pagination screen; It's configured as protected property of the menu entity;
+- `currentItemsCount` The actual number of items showed on the current screen;
 - `isPaginationFirstPage` Check if the current screen is the first screen of the pagination;
 - `isPaginationLastPage` Check if the current screen is the last screen of the pagination;
 - `lastRetrievedId` Get the id of the last fetched row - the next query to the database to fetch, will begin at that index;
@@ -1528,9 +1524,16 @@ $this->log('Balance sent')
 ```
 The log will be stored in the `storage/logs/{date}/{name_of_the_menu_that_is_logging}.log` file.
 
-## Inserting defined actions
+## Inserting predefined actions
+The available predefined actions are:
+- backAction
+- mainMenuAction
+- paginateForwardAction
+- paginateBackAction
 
-### Inserting Welcome actions
+### Inserting Back action
+You can add a go-back action to your actions by using the `__back` next menu or by calling the `$this->backAction()` method.
+
 ```php
 namespace App\Menus;
 
@@ -1539,17 +1542,198 @@ class ProcessBalanceRequest extends Menu
   public function actions($userPreviousResponses)
   {
     $actions = [
-
+      // Define your actions here
+      
+      // Add back action
+      '0' => [
+        'display' => 'Back',
+        'next_menu' => '__back',
+      ]
     ];
 
-    $actions = array_replace($actions, $this->backAction());
-      return $actions;
+    return $actions;
   }
 }
 ```
-### Inserting Back actions
+The trigger is `0` and the message attached is `Back`.
+
+or
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+    ];
+
+    // Add back action
+    $actions = $this->mergeAction($actions, $this->backAction());
+
+    return $actions;
+  }
+}
+```
+The method will return the exact array that we harcoded in the first example.
+You can modify the trigger by passing your custom trigger to the method as first parameter. You can custom the message attached by passing the sustom message as second parameter.
+
+### Inserting Welcome action
+You can add a go-to-welcome action to your actions by using the `__welcome` next menu or by calling the `$this->mainMenuAction()` method.
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+      
+      // Add back action
+      '00' => [
+        'display' => 'Main menu',
+        'next_menu' => '__welcome',
+      ]
+    ];
+
+    return $actions;
+  }
+}
+```
+The trigger is `00` and the message attached is `Main menu`.
+
+or
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+    ];
+
+    // Add main menu action
+    $actions = $this->mergeAction($actions, $this->mainMenuAction());
+
+    return $actions;
+  }
+}
+```
 ### Inserting Paginate forward actions
+You can add a go-forward-in-pagination action by using the `__paginate_forward` next menu or by calling the `$this->paginateForwardAction()` method.
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+      
+      // Add back action
+      '00' => [
+        'display' => 'More',
+        'next_menu' => '__paginate_forward',
+      ]
+    ];
+
+    return $actions;
+  }
+}
+```
+Since we are going back, we are using the same trigger and message attached as the normal go-back action. The trigger is `0` and the message attached is `Back`.
+
+or
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+    ];
+
+    // Add paginate back action
+    $actions = $this->mergeAction($actions, $this->paginateBackAction());
+
+    return $actions;
+  }
+}
+```
 ### Inserting Paginate back actions
+You can add a go-to-welcome action to your actions by using the `__paginate_back` next menu or by calling the `$this->paginateBackAction()` method.
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+      
+      // Add back action
+      '0' => [
+        'display' => 'Back',
+        'next_menu' => '__paginate_back',
+      ]
+    ];
+
+    return $actions;
+  }
+}
+```
+Since we are going back, we are using the same trigger and message attached as the normal go-back action. The trigger is `0` and the message attached is `Back`.
+
+or
+
+```php
+namespace App\Menus;
+
+class ProcessBalanceRequest extends Menu
+{
+  public function actions($userPreviousResponses)
+  {
+    $actions = [
+      // Define your actions here
+    ];
+
+    // Add paginate back action
+    $actions = $this->mergeAction($actions, $this->paginateBackAction());
+
+    return $actions;
+  }
+}
+```
+
+## Console commands
+Rejoice ships with useful console features to allow you test quickly your application and other more.
+
+### Running the simulator
+You have access to two simulators, one in console, the other as a web interface.
+You can provide the configuration of the simulator in the .env file:
+
+#### Console simulator
+
+Run the console simulator by running the command
+```shell
+php smile simulator:console
+```
+You can use the shortcut `php smile sim:con`
+> Note: You can use shortcuts for any simulator command, provided it does not conflict with any other command.
 
 <!-- <style>
   .note {

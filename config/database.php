@@ -16,7 +16,9 @@ use function Prinx\Dotenv\env;
  * equivalent to:
  * $db = $this->db('default');
  */
+
 return [
+
     'default' => [
         'user' => env('APP_DEFAULT_DB_USER', ''),
         'password' => env('APP_DEFAULT_DB_PASS', ''),
@@ -24,4 +26,5 @@ return [
         'port' => env('APP_DEFAULT_DB_PORT', ''),
         'dbname' => env('APP_DEFAULT_DB_NAME', ''),
     ],
+
 ];

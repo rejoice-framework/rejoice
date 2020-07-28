@@ -1,9 +1,7 @@
 <?php
 namespace App\Console\Commands;
 
-use Prinx\Rejoice\Console\SmileCommand;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
+use Prinx\Rejoice\Console\Commands\SmileCommand;
 
 class MyCustomCommand extends SmileCommand
 {
@@ -11,12 +9,13 @@ class MyCustomCommand extends SmileCommand
     {
         $this->setName('namespace:command')
             ->setDescription('This is a sample command')
+            ->setDescription('This is a sample command')
             ->setHelp('This command shows how simple it is to create a command with rejoice.');
     }
 
-    public function execute(InputInterface $input, OutputInterface $output)
+    public function fire()
     {
-        $output->writeln('<info>It works :D</info>');
+        $this->success('It works :D');
 
         return SmileCommand::SUCCESS;
     }

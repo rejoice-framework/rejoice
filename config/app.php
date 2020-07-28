@@ -3,15 +3,21 @@
 use function Prinx\Dotenv\env;
 
 return [
+
     /*
      * Unique identifier for this application.
      */
-    'id' => env('APP_ID', 'rejoice_' . rand(1, 9999999)),
+    'id' => env('APP_ID', 'rejoice_' . rand(1, 999999)),
 
     /*
      * The environment of the application
      */
     'environment' => env('APP_ENV', 'prod'),
+
+    /*
+     *
+     */
+    'country_phone_prefix' => '233',
 
     /*
      * If the application can send SMS, specify the sender name to use.
@@ -70,16 +76,6 @@ return [
      */
     'ask_user_before_reload_last_session' => true,
 
-    'message_ask_user_before_reload_last_session' => "Do you want to continue from where you left?",
-
-    'last_session_trigger' => "1",
-
-    'last_session_display' => "Continue last session",
-
-    'restart_session_trigger' => "2",
-
-    'restart_session_display' => "Restart",
-
     /*
      * USSD sessions times out very quickly depending on the network and the
      * device of the user. When it happens, the user is not able to receive the
@@ -90,15 +86,6 @@ return [
      * no matter how long the USSD menu is.
      */
     'allow_timeout' => true,
-
-    /*
-     * If allow_timeout is false, this message will be appended to the last
-     * message to let the user press the cancel button to terminate the request.
-     * This will be displayed only if the user is assessing the application via USSD.
-     * If the user does not press cancel, and rather send a response, the
-     * application itself automatically destroyed the session
-     */
-    'no_timeout_final_response_cancel_msg' => 'Press Cancel to end.',
 
     /*
      * Cancel the session whenever there is an error in the user's response
@@ -115,75 +102,30 @@ return [
     'end_on_unhandled_action' => false,
 
     /*
-     * Default character that will trigger a go back, if the user can go back
-     * on the current menu
+     * If true, you can directly call a sub menu, without passing through
+     * the normal flow (from the welcome menu till the particular sub menu)
      */
-    'back_action_trigger' => '0',
+    'allow_direct_sub_menu_call' => false,
 
     /*
-     * Default 'go back' expression to display to the user, if the user can go
-     * back on the current menu
+     * Customize according to the paramters provided by the telecos of the
+     * country
      */
-    'back_action_display' => 'Back',
+    'request_param_user_phone_number' => env('USER_PHONE_PARAM_NAME', 'msisdn'),
+    'request_param_user_network' => env('USER_NETWORK_PARAM_NAME', 'network'),
+    'request_param_session_id' => env('SESSION_ID_PARAM_NAME', 'sessionID'),
+    'request_param_request_type' => env('REQUEST_TYPE_PARAM_NAME', 'ussdServiceOp'),
+    'request_param_user_response' => env('USER_RESPONSE_PARAM_NAME', 'ussdString'),
+    'request_param_menu_string' => env('MENU_STRING_PARAM_NAME', 'message'),
 
     /*
-     * Default character that will trigger a go forward, if the user can go
-     * forward on the current menu
+     * Request type codes
      */
-    'splitted_menu_next_thrower' => '00',
+    'request_init' => env('REQUEST_INIT_CODE', '1'),
+    'request_end' => env('REQUEST_END_CODE', '17'),
+    'request_failed' => env('REQUEST_FAILED_CODE', '3'),
+    'request_cancelled' => env('REQUEST_CANCELLED_CODE', '30'),
+    'request_ask_user_response' => env('REQUEST_ASK_USER_RESPONSE_CODE', '2'),
+    'request_user_sent_response' => env('REQUEST_USER_SENT_RESPONSE_CODE', '18'),
 
-    /*
-     * Default 'go forward' expression to display to the user, if they can go
-     * forward on the current menu
-     */
-    'splitted_menu_display' => 'Next page',
-
-    /*
-     * Default character that will trigger a go forward, if the user can go
-     * forward on the current menu
-     */
-    'paginate_forward_trigger' => '00',
-
-    /*
-     * Default 'paginate forward' expression
-     */
-    'paginate_forward_display' => 'More',
-
-    /*
-     * Default character that will trigger a go forward, if the user can go
-     * forward on the current menu
-     */
-    'welcome_action_trigger' => '01',
-
-    /*
-     * Default 'paginate forward' expression
-     */
-    'welcome_action_display' => 'Main menu',
-
-    /*
-     * Number of pagination item to show per page when paginating
-     */
-    'pagination_default_to_show_per_page' => 5,
-
-    /*
-     * Default character that will trigger a paginate back, if the user can
-     * paginate back on the current menu
-     */
-    'paginate_back_trigger' => '0',
-
-    /*
-     * Default 'paginate back' expression
-     */
-    'paginate_back_display' => 'Back',
-
-    /*
-     * Default end message that will be displayed to the user if an `end`
-     * method has been called without passing any message to display.
-     */
-    'default_end_msg' => 'Thank you.',
-
-    /*
-     * Default error message
-     */
-    'default_error_msg' => 'Invalid Input.',
 ];
