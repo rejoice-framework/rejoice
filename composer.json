@@ -4,10 +4,7 @@
     "type": "project",
     "require": {
         "prinx/rejoice-framework": "dev-master",
-        "prinx/dotenv": "dev-master",
-        "prinx/phputils": "dev-master",
-        "symfony/console": "5.1",
-        "prinx/notify": "dev-master"
+        "symfony/console": "5.1"
     },
     "require-dev": {
         "prinx/ussd-simulator": "dev-master",
