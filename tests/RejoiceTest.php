@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests;
 
 use function Prinx\Dotenv\env;
 use PHPUnit\Framework\TestCase;

@@ -85,14 +85,50 @@ A USSD application is basically a series of popups (which we call *menus* or *pa
 
 The Rejoice Framework allows you to create simple to complex USSD applications by allowing you to create each menu and have control over everything from what is displayed to controling the users inputs.
 
-## Install the framework
+## Quick start
+### Install the framework
+
 ```shell
-~/www$ mkdir rejoice-first-project
-~/www$ cd rejoice-first-project
+composer create-project prinx/rejoice first-rejoice-project
 ```
-Then download the project files:
-```shell
-~/www/rejoice-first-project$ composer create-project prinx/rejoice
+That's all! You already has a working USSD application.
+
+Let's run the application in the simulator.
+
+### Configuring the simulator
+Go to the .env file at the root folder.
+
+```ini
+APP_ENV=dev
+APP_URL=http://localhost/first-rejoice-project/public
+SMS_ENDPOINT=
+
+SESSION_DRIVER=file
+
+SESSION_DB_USER=root
+SESSION_DB_PASS=
+SESSION_DB_HOST=localhost
+SESSION_DB_PORT=3306
+SESSION_DB_NAME=
+
+APP_DEFAULT_DB_USER=root
+APP_DEFAULT_DB_PASS=
+APP_DEFAULT_DB_HOST=localhost
+APP_DEFAULT_DB_PORT=3306
+APP_DEFAULT_DB_NAME=
+
+USSD_URL=${APP_URL}
+USSD_PHONE=+233545466796
+USSD_NETWORK_MNC=01
+USSD_CODE="*380*57#"
+USSD_CONSOLE_BEHAVIOR=
+
+REQUIRED_PARAM_NAME_MENU_STRING=message
+REQUIRED_PARAM_NAME_REQUEST_TYPE=ussdServiceOp
+REQUIRED_PARAM_NAME_SESSION_ID=sessionID
+REQUIRED_PARAM_NAME_USER_RESPONSE=ussdString
+REQUIRED_PARAM_NAME_USER_PHONE=msisdn
+REQUIRED_PARAM_NAME_USER_NETWORK=network
 ```
 
 ## Configuring the application
@@ -101,28 +137,35 @@ Open the .env file just to see the variables inside. The only variable we are go
 
 ```ini
 APP_ENV=dev
-APP_URL=http://localhost/rejoice-first-project/
-
-# Not required
-USSD_CODE=
+APP_URL=http://localhost/ussd-test/public
 SMS_ENDPOINT=
 
-# Can be "file" or "database"
 SESSION_DRIVER=file
 
-# Not needed, as sessions will be stored in files
 SESSION_DB_USER=root
 SESSION_DB_PASS=
 SESSION_DB_HOST=localhost
 SESSION_DB_PORT=3306
 SESSION_DB_NAME=
 
-# We are not going to use any database yet
 APP_DEFAULT_DB_USER=root
 APP_DEFAULT_DB_PASS=
 APP_DEFAULT_DB_HOST=localhost
 APP_DEFAULT_DB_PORT=3306
 APP_DEFAULT_DB_NAME=
+
+USSD_URL=${APP_URL}
+USSD_PHONE=+233545466796
+USSD_NETWORK_MNC=01
+USSD_CODE="*380*57#"
+USSD_CONSOLE_BEHAVIOR=
+
+REQUIRED_PARAM_NAME_MENU_STRING=message
+REQUIRED_PARAM_NAME_REQUEST_TYPE=ussdServiceOp
+REQUIRED_PARAM_NAME_SESSION_ID=sessionID
+REQUIRED_PARAM_NAME_USER_RESPONSE=ussdString
+REQUIRED_PARAM_NAME_USER_PHONE=msisdn
+REQUIRED_PARAM_NAME_USER_NETWORK=network
 ```
 ### The `config/` folder
 
@@ -258,7 +301,7 @@ Let's run our application in a ussd simulator to show what it will look like in 
 Rejoice comes with a default console command called `smile` :)
 To run the simulator, run this command in the console, at the root of our project:
 ```console
-~/www/rejoice-first-project$ php smile simulator run
+~/www/first-rejoice-project$ php smile simulator run
 ```
 You will get the following response:
 ```console
