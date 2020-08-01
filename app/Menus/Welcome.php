@@ -8,14 +8,4 @@ class Welcome extends Menu
     {
         return "Welcome to Rejoice :)";
     }
-
-    public function actions()
-    {
-        return [
-            '1' => [
-                'display' => 'Say hello!',
-                'next_menu' => 'get_name',
-            ],
-        ];
-    }
 }

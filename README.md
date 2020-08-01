@@ -91,7 +91,7 @@ The Rejoice Framework allows you to create simple to complex USSD applications b
 ```shell
 composer create-project prinx/rejoice first-rejoice-project
 ```
-That's all! You already has a working USSD application.
+That's all! You already have a working USSD application.
 
 Let's run the application in the simulator.
 
