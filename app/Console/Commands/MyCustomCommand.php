@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Console\Commands;
 
 use Prinx\Rejoice\Console\Commands\SmileCommand;

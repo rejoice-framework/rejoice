@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Menus;
 
 use Prinx\Rejoice\Menu\BaseMenu;
@@ -8,5 +9,4 @@ use Prinx\Rejoice\Menu\BaseMenu;
  */
 class Menu extends BaseMenu
 {
-
 }
