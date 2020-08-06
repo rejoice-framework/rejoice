@@ -4,6 +4,7 @@
 <a href="https://travis-ci.org/prinx/rejoice"><img src="https://travis-ci.org/prinx/rejoice.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/prinx/rejoice"><img src="https://poser.pugx.org/prinx/rejoice/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/prinx/rejoice"><img src="https://poser.pugx.org/prinx/rejoice/license.svg" alt="License"></a>
+<a href="https://github.styleci.io/repos/274399081?branch=master"><img style="border-radius:3px" src="https://github.styleci.io/repos/274399081/shield?branch=master" alt="StyleCI"></a>
 </p>
 
 ## About Rejoice
