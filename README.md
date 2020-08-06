@@ -23,7 +23,7 @@ Thank you for considering contributing to the Rejoice framework! The contributio
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://prinx.github.io/rejoice-docs/contributions#code-of-conduct).
+In order to ensure that the Rejoice community is welcoming to all, please review and abide by the [Code of Conduct](https://prinx.github.io/rejoice-docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
