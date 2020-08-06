@@ -1,4 +1,5 @@
 <?php
+
 use function Prinx\Dotenv\env;
 
 return [
