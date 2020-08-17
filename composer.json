@@ -1,5 +1,5 @@
 {
-    "name": "prinx/rejoice",
+    "name": "rejoice/rejoice",
     "description": "Rejoice building USSD applications",
     "type": "project",
     "require": {
