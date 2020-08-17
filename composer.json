@@ -3,7 +3,7 @@
     "description": "Rejoice building USSD applications",
     "type": "project",
     "require": {
-        "prinx/rejoice-framework": "dev-master",
+        "rejoice/rejoice-framework": "dev-master",
         "symfony/console": "5.1"
     },
     "require-dev": {
