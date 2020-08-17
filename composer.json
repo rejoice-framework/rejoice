@@ -7,7 +7,7 @@
         "symfony/console": "5.1"
     },
     "require-dev": {
-        "prinx/ussd-simulator": "dev-master",
+        "rejoice/simulator": "dev-master",
         "phpunit/phpunit": "9.2.5"
     },
     "license": "MIT",
