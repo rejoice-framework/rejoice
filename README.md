@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/rejoice-framework/docs/raw/master/assets/images/logo.png" width="400"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/rejoice/rejoice"><img src="https://travis-ci.org/rejoice/rejoice.svg" alt="Build Status"></a>
+<a href="https://travis-ci.org/rejoice-framework/rejoice"><img src="https://travis-ci.com/rejoice-framework/rejoice.svg?branch=master" alt="Build Status"></a>
 <a href="https://packagist.org/packages/rejoice/rejoice"><img src="https://poser.pugx.org/rejoice/rejoice/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/rejoice/rejoice"><img src="https://poser.pugx.org/rejoice/rejoice/license.svg" alt="License"></a>
 <a href="https://github.styleci.io/repos/274399081?branch=master"><img src="https://github.styleci.io/repos/274399081/shield?branch=master" alt="StyleCI"></a>
