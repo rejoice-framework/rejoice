@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use Prinx\Rejoice\Console\Commands\SmileCommand;
+use Rejoice\Console\Commands\SmileCommand;
 
 class MyCustomCommand extends SmileCommand
 {

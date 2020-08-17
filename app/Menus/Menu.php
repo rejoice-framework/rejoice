@@ -2,7 +2,7 @@
 
 namespace App\Menus;
 
-use Prinx\Rejoice\Menu\BaseMenu;
+use Rejoice\Menu\BaseMenu;
 
 /**
  * This is the default Menu class which the other menus extend.

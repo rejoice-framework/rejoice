@@ -10,5 +10,5 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$console = new Prinx\Rejoice\Console\Application;
+$console = new Rejoice\Console\Application;
 $console->run();
