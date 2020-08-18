@@ -6,9 +6,16 @@ use PHPUnit\Framework\TestCase;
 use Prinx\Config;
 use Rejoice\Simulator\Libs\Simulator;
 use function Prinx\Dotenv\env;
+use function Prinx\Dotenv\loadEnv;
 
 class RejoiceTest extends TestCase
 {
+    public function __construct()
+    {
+        parent::__construct();
+        loadEnv(realpath(__DIR__.'/../../.env.example'));
+    }
+
     public function testRequest()
     {
         $simulator = new Simulator;

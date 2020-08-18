@@ -11,12 +11,6 @@
         "phpunit/phpunit": "9.2.5"
     },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Prince Dorcis",
-            "email": "princedorcis@gmail.com"
-        }
-    ],
     "minimum-stability": "dev",
     "config": {
         "optimize-autoloader": true
