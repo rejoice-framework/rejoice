@@ -38,7 +38,7 @@ class RejoiceTest extends TestCase
         $data = json_decode($response->data('data'), true);
 
         $this->assertTrue(is_array($data), 'Test USSD request successful');
-        $this->assertTrue('2' == $data[$ussdServiceOp]);
-        $this->assertTrue($simulator->getPayload()[$sessionId] == $data[$sessionId]);
+        $this->assertTrue($data[$ussdServiceOp] == '2', 'Test Service code correct');
+        $this->assertTrue($simulator->getPayload()[$sessionId] == $data[$sessionId], 'Test sessionID correct');
     }
 }
