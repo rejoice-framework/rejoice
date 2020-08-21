@@ -9,13 +9,15 @@
 
 ## About Rejoice
 
-Rejoice is a PHP framework for USSD applications. It main goal is to speed up your USSD application development while having at anytime a scalable code.
+Rejoice is a PHP framework for USSD applications. Its main goal is to allow you to develop your USSD application the fastest way while enjoying at each step of the process.
 
-The Rejoice Framework allows you to create simple to complex USSD applications by allowing you to create each menu and have control over everything from what is displayed to controling the users inputs.
+It allows you to create simple to complex USSD applications and have control over everything from what is displayed, to the user inputs.
+
+Rejoice Framework includes a console and a browser simulator that helps you simulate your application the best way.
 
 ## Learning Rejoice
 
-The rejoice [documentation](https://rejoice-framework.github.io/docs) takes you through an easy tutorial to quicly learn Rejoice and get your app ready to use.
+The rejoice [documentation](https://rejoice-framework.github.io/docs) takes you through an easy tutorial to quickly learn Rejoice and get your app ready to use.
 
 ## Contributing
 
