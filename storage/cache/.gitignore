@@ -1,0 +1,4 @@
+*
+!.gitignore
+!log-count.cache
+!rejoice.cache
