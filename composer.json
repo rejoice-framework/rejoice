@@ -4,7 +4,12 @@
     "type": "project",
     "require": {
         "rejoice/framework": "dev-master",
-        "symfony/console": "5.1"
+        "symfony/console": "5.1",
+        "symfony/http-foundation": "^5.2@dev",
+        "symfony/routing": "^5.2@dev",
+        "symfony/http-kernel": "^5.2@dev",
+        "symfony/event-dispatcher": "^5.2@dev",
+        "symfony/dependency-injection": "^5.2@dev"
     },
     "require-dev": {
         "rejoice/simulator": "dev-master",
