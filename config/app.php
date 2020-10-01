@@ -7,7 +7,7 @@ return [
     /*
      * Unique identifier for this application.
      */
-    'id' => env('APP_ID', 'rejoice_'.rand(1, 999999)),
+    'id' => env('APP_ID', 'rejoice_ussd'),
 
     /*
      * The environment of the application

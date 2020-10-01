@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Register your commands here.
+ * Register your custom commands here.
  */
 
 return [

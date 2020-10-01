@@ -8,7 +8,7 @@ class MyCustomCommand extends SmileCommand
 {
     public function configure()
     {
-        $this->setName('namespace:command')
+        $this->setName('namespace:name')
             ->setDescription('This is a sample command')
             ->setHelp('This command shows how simple it is to create a command with rejoice.');
     }

@@ -7,8 +7,11 @@ return [
         'max_page_lines'      => 10,
     ],
 
+    /*
+     * There is no actual message character or line limit for the WhatsApp channel
+     */
     'WHATSAPP' => [
-        'max_page_characters' => 10000, // Actually no limit.
+        'max_page_characters' => 10000,
         'max_page_lines'      => 10000,
     ],
 

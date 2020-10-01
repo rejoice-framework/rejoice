@@ -4,14 +4,26 @@ use function Prinx\Dotenv\env;
 
 return [
 
-    'driver'   => env('SESSION_DRIVER', 'file'), // file|database
+    /*
+     * Supported session drivers are "file" and "database"
+     */
+    'driver' => env('SESSION_DRIVER', 'file'),
 
-    // Use to control the timeout of the final response
-    'timeout'  => 180, // 3min
+    /*
+     * Use to control the timeout of the final response.
+     * The default is 180 seconds
+     */
+    'timeout' => 180,
 
-    // Remaining session will be deleted after the lifetime has passed
-    'lifetime' => 60 * 60 * 5, // 5h
+    /*
+     * Remaining session will be deleted after the lifetime has passed
+     * The default is 18.000 seconds (5 hours)
+     */
+    'lifetime' => 60 * 60 * 5,
 
+    /*
+     * Session database configuration
+     */
     'database' => [
         'user'     => env('SESSION_DB_USER', ''),
         'password' => env('SESSION_DB_PASS', ''),
