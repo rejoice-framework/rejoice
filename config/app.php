@@ -7,7 +7,7 @@ return [
     /*
      * Unique identifier for this application.
      */
-    'id' => env('APP_ID', 'rejoice_'.rand(1, 999999)),
+    'id' => env('APP_ID', 'rejoice_ussd'),
 
     /*
      * The environment of the application
@@ -31,22 +31,22 @@ return [
 
     /*
      * If true, and an SMS endpoint and sender name have been configured, every
-     * last response will be sent as SMS to the user
+     * last response will be sent as SMS to the user.
      */
     'always_send_sms_at_end' => false,
 
     /*
-     * For test purpose. You can enable/disable overall sending of SMS
+     * For test purpose. You can enable/disable overall sending of SMS.
      */
     'send_sms_enabled' => env('SEND_SMS_ENABLED', true),
 
     /*
-     * For test purpose. You can enable/disable overall sending of SMS
+     * For test purpose. You can enable/disable overall sending of SMS.
      */
     'log_enabled' => env('LOG_ENABLED', true),
 
     /*
-     * You can disabled connection to the application database by turning this to false
+     * You can disabled connection to the application database by turning this to false.
      */
     'connect_app_db' => true,
 
@@ -62,7 +62,7 @@ return [
      * intentionally or unintentionaly, cancels his request.
      * If false, whenever the user comes back after
      * cancelling his session, they will have a prompt to continue from last
-     * session or restart a new session
+     * session or restart a new session.
      */
     'always_start_new_session' => false,
 
@@ -88,7 +88,7 @@ return [
     'allow_timeout' => true,
 
     /*
-     * Cancel the session whenever there is an error in the user's response
+     * Cancel the session whenever there is an error in the user's response.
      */
     'end_on_user_error' => false,
 
@@ -103,13 +103,18 @@ return [
 
     /*
      * If true, you can directly call a sub menu, without passing through
-     * the normal flow (from the welcome menu till the particular sub menu)
+     * the normal flow (from the welcome menu till the particular sub menu).
      */
     'allow_direct_sub_menu_call' => false,
 
     /*
+     * Delimits variables in stubs files.
+     */
+    'stub_variable_delimiter' => ':',
+
+    /*
      * Customize according to the paramters provided by the telecos of the
-     * country
+     * country.
      */
     'request_param_user_phone_number' => env('USER_PHONE_PARAM_NAME', 'msisdn'),
     'request_param_user_network'      => env('USER_NETWORK_PARAM_NAME', 'network'),
@@ -119,7 +124,7 @@ return [
     'request_param_menu_string'       => env('MENU_STRING_PARAM_NAME', 'message'),
 
     /*
-     * Request type codes
+     * Request type codes.
      */
     'request_init'               => env('REQUEST_INIT_CODE', '1'),
     'request_end'                => env('REQUEST_END_CODE', '17'),

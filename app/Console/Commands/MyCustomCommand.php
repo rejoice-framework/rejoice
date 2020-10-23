@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Rejoice\Console\Commands\SmileCommand;
+use Rejoice\Console\Commands\SmileCommand as Command;
 
-class MyCustomCommand extends SmileCommand
+class MyCustomCommand extends Command
 {
     public function configure()
     {
@@ -17,6 +17,6 @@ class MyCustomCommand extends SmileCommand
     {
         $this->success('It works :D');
 
-        return SmileCommand::SUCCESS;
+        return Command::SUCCESS;
     }
 }

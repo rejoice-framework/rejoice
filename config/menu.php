@@ -4,24 +4,62 @@ return [
 
     'message_ask_user_before_reload_last_session' => 'Do you want to continue from where you left?',
 
-    'last_session_trigger'    => '1',
-    'last_session_display'    => 'Continue last session',
+    'last_session_trigger' => '1',
+
+    'last_session_display' => 'Continue last session',
+
     'restart_session_trigger' => '2',
+
     'restart_session_display' => 'Restart',
 
+    /*
+     * Default character that will trigger a go back, if the user can go back
+     * on the current menu
+     */
     'back_action_trigger' => '0',
+
+    /*
+     * Default 'go back' expression to display to the user, if the user can go
+     * back on the current menu
+     */
     'back_action_display' => 'Back',
 
+    /*
+     * Default character that will trigger a go forward, if the user can go
+     * forward on the current menu
+     */
     'splitted_menu_next_trigger' => '00',
-    'splitted_menu_display'      => 'Next page',
 
+    /*
+     * Default 'go forward' expression to display to the user, if they can go
+     * forward on the current menu
+     */
+    'splitted_menu_display' => 'Next page',
+
+    /*
+     * Default character that will trigger a go forward, if the user can go
+     * forward on the current menu
+     */
     'paginate_forward_trigger' => '00',
+
+    /*
+     * Default 'paginate forward' expression
+     */
     'paginate_forward_display' => 'More',
 
+    /*
+     * Default character that will trigger a go forward, if the user can go
+     * forward on the current menu
+     */
     'welcome_action_trigger' => '01',
+
+    /*
+     * Default 'paginate forward' expression
+     */
     'welcome_action_display' => 'Main menu',
 
     'end_trigger' => '02',
+
     'end_display' => 'End',
 
     /*
@@ -34,12 +72,19 @@ return [
 
     'unhandled_action_message' => 'Action not handled.',
 
-    'empty_response_error' => 'Empty response not allowed',
+    'empty_response_error' => 'Empty response not allowed.',
 
     'application_failed_message' => 'Sorry, an error happened.',
 
+    /*
+     * Default character that will trigger a paginate back, if the user can
+     * paginate back on the current menu
+     */
     'paginate_back_trigger' => '0',
 
+    /*
+     * Default 'paginate back' expression
+     */
     'paginate_back_display' => 'Back',
 
     /*
@@ -62,6 +107,8 @@ return [
      * 1) Register
      */
     'trigger_decorator' => '. ',
+
+    'namespace_delimiter' => '::',
 
     /*
      * If allow_timeout is false, this message will be appended to the last
