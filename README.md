@@ -15,6 +15,14 @@ The Rejoice Framework allows you to create simple to complex USSD applications b
 
 ## Learning Rejoice
 
+### Installation
+
+```shell
+composer create-project rejoice/rejoice my-ussd-app
+```
+
+### Documentation
+
 The rejoice [documentation](https://rejoice-framework.github.io/docs) takes you through an easy tutorial to quicly learn Rejoice and get your app ready to use.
 
 ## Contributing
