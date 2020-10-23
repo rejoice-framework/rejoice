@@ -3,7 +3,7 @@
     "description": "Rejoice building USSD applications",
     "type": "project",
     "require": {
-        "rejoice/framework": "^0.0.4",
+        "rejoice/framework": "^0.0.5",
         "symfony/console": "5.1"
     },
     "require-dev": {
