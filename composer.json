@@ -4,10 +4,10 @@
     "type": "project",
     "require": {
         "rejoice/framework": "^0.0.7",
+        "rejoice/simulator": "^0.2.2",
         "symfony/console": "^5.1"
     },
     "require-dev": {
-        "rejoice/simulator": "^0.2.2",
         "phpunit/phpunit": "^9.2.5"
     },
     "license": "MIT",
