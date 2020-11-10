@@ -117,11 +117,11 @@ return [
      * country.
      */
     'request_param_user_phone_number' => env('USER_PHONE_PARAM_NAME', 'msisdn'),
+    'request_param_menu_string'       => env('MENU_STRING_PARAM_NAME', 'message'),
     'request_param_user_network'      => env('USER_NETWORK_PARAM_NAME', 'network'),
     'request_param_session_id'        => env('SESSION_ID_PARAM_NAME', 'sessionID'),
-    'request_param_request_type'      => env('REQUEST_TYPE_PARAM_NAME', 'ussdServiceOp'),
     'request_param_user_response'     => env('USER_RESPONSE_PARAM_NAME', 'ussdString'),
-    'request_param_menu_string'       => env('MENU_STRING_PARAM_NAME', 'message'),
+    'request_param_request_type'      => env('REQUEST_TYPE_PARAM_NAME', 'ussdServiceOp'),
 
     /*
      * Request type codes.

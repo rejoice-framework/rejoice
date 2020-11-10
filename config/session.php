@@ -11,14 +11,15 @@ return [
 
     /*
      * Timeout of the final response
+     * Default = 3 mins
      */
-    'timeout'  => 5, // 3min
+    'timeout' => 180,
 
     /*
      * Sessions will be deleted after the lifetime has passed
-     * Default = 60 * 60 * 5 = 5hours
+     * Default = 5 hours
      */
-    'lifetime' => 60 * 60 * 5,
+    'lifetime' => 18000,
 
     'database' => [
         'user'     => env('SESSION_DB_USER', ''),
