@@ -4,8 +4,8 @@ namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use Prinx\Config;
-use Rejoice\Simulator\Libs\Simulator;
 use function Prinx\Dotenv\env;
+use Rejoice\Simulator\Libs\Simulator;
 
 class RejoiceTest extends TestCase
 {
