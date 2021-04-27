@@ -3,7 +3,6 @@
 use function Prinx\Dotenv\env;
 
 return [
-
     /*
      * Unique identifier for this application.
      */
@@ -14,9 +13,6 @@ return [
      */
     'environment' => env('APP_ENV', 'prod'),
 
-    /*
-     *
-     */
     'country_phone_prefix' => '233',
 
     /*
@@ -39,6 +35,16 @@ return [
      * For test purpose. You can enable/disable overall sending of SMS.
      */
     'send_sms_enabled' => env('SEND_SMS_ENABLED', true),
+
+    /*
+     * SMS Service
+     */
+    'sms_service' => \Rejoice\Sms\SmsService::class,
+
+    /*
+     * SMS Service.
+     */
+    'jobs_class' => \App\Jobs\Job::class,
 
     /*
      * For test purpose. You can enable/disable overall sending of SMS.
@@ -69,12 +75,12 @@ return [
     /*
      * This option works with the `always_start_new_session` option. If true
      * and always_start_new_session has been set to false, the user will have a
-     * prompt to continue their last session or restart a new session. If
-     * false, the last session will be automatically loaded whenever the user
+     * prompt to continue their previous session or restart a new session. If
+     * false, the previous session will be automatically loaded whenever the user
      * comes back.
      * This does not have any effect if always_start_new_session is set to true.
      */
-    'ask_user_before_reload_last_session' => true,
+    'ask_user_before_reload_previous_session' => true,
 
     /*
      * USSD sessions times out very quickly depending on the network and the
@@ -85,7 +91,13 @@ return [
      * application not to time out. So that the user can see the last response,
      * no matter how long the USSD menu is.
      */
-    'allow_timeout' => true,
+    'allow_timeout' => false,
+
+    /*
+     * If true, you can directly call a sub menu, without passing through
+     * the normal flow (from the welcome menu till the particular sub menu).
+     */
+    'allow_direct_sub_menu_call' => true,
 
     /*
      * Cancel the session whenever there is an error in the user's response.
@@ -102,12 +114,6 @@ return [
     'end_on_unhandled_action' => false,
 
     /*
-     * If true, you can directly call a sub menu, without passing through
-     * the normal flow (from the welcome menu till the particular sub menu).
-     */
-    'allow_direct_sub_menu_call' => false,
-
-    /*
      * Delimits variables in stubs files.
      */
     'stub_variable_delimiter' => ':',
@@ -117,20 +123,19 @@ return [
      * country.
      */
     'request_param_user_phone_number' => env('USER_PHONE_PARAM_NAME', 'msisdn'),
-    'request_param_menu_string'       => env('MENU_STRING_PARAM_NAME', 'message'),
-    'request_param_user_network'      => env('USER_NETWORK_PARAM_NAME', 'network'),
-    'request_param_session_id'        => env('SESSION_ID_PARAM_NAME', 'sessionID'),
-    'request_param_user_response'     => env('USER_RESPONSE_PARAM_NAME', 'ussdString'),
-    'request_param_request_type'      => env('REQUEST_TYPE_PARAM_NAME', 'ussdServiceOp'),
+    'request_param_menu_string' => env('MENU_STRING_PARAM_NAME', 'message'),
+    'request_param_user_network' => env('USER_NETWORK_PARAM_NAME', 'network'),
+    'request_param_session_id' => env('SESSION_ID_PARAM_NAME', 'sessionID'),
+    'request_param_user_response' => env('USER_RESPONSE_PARAM_NAME', 'ussdString'),
+    'request_param_request_type' => env('REQUEST_TYPE_PARAM_NAME', 'ussdServiceOp'),
 
     /*
      * Request type codes.
      */
-    'request_init'               => env('REQUEST_INIT_CODE', '1'),
-    'request_end'                => env('REQUEST_END_CODE', '17'),
-    'request_failed'             => env('REQUEST_FAILED_CODE', '3'),
-    'request_cancelled'          => env('REQUEST_CANCELLED_CODE', '30'),
-    'request_ask_user_response'  => env('REQUEST_ASK_USER_RESPONSE_CODE', '2'),
+    'request_init' => env('REQUEST_INIT_CODE', '1'),
+    'request_end' => env('REQUEST_END_CODE', '17'),
+    'request_failed' => env('REQUEST_FAILED_CODE', '3'),
+    'request_cancelled' => env('REQUEST_CANCELLED_CODE', '30'),
+    'request_ask_user_response' => env('REQUEST_ASK_USER_RESPONSE_CODE', '2'),
     'request_user_sent_response' => env('REQUEST_USER_SENT_RESPONSE_CODE', '18'),
-
 ];

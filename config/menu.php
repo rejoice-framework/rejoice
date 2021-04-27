@@ -1,12 +1,11 @@
 <?php
 
 return [
+    'message_ask_user_before_reload_previous_session' => 'Do you want to continue from where you left?',
 
-    'message_ask_user_before_reload_last_session' => 'Do you want to continue from where you left?',
+    'previous_session_trigger' => '1',
 
-    'last_session_trigger' => '1',
-
-    'last_session_display' => 'Continue last session',
+    'previous_session_display' => 'Continue',
 
     'restart_session_trigger' => '2',
 
@@ -123,5 +122,4 @@ return [
      * Space between the message and a cancel message
      */
     'seperator_menu_string_and_cancel_message' => "\n\n",
-
 ];

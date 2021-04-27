@@ -10,7 +10,7 @@ use Rejoice\Foundation\Path;
 /**
  * Base Test case.
  */
-class TestCase extends BaseTestCase
+abstract class TestCase extends BaseTestCase
 {
     public function __construct()
     {
