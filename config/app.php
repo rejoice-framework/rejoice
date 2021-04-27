@@ -42,7 +42,7 @@ return [
     'sms_service' => \Rejoice\Sms\SmsService::class,
 
     /*
-     * SMS Service.
+     * Jobs class.
      */
     'jobs_class' => \App\Jobs\Job::class,
 
