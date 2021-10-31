@@ -1,0 +1,31 @@
+{
+    "status": 200,
+    "message": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "Male"
+        },
+        {
+            "id": 2,
+            "name": "Female"
+        }
+    ],
+    "developed_by": {
+        "AUTHOR_NAME": "Bitlogic Technologies Ghana",
+        "COPYRIGHT": "copyright@2020 All rights reserved",
+        "AUTHOR_PHONE": [
+            "233204038261"
+        ],
+        "SUPPORT_PHONE": [
+            "233204038261"
+        ],
+        "SUPPORT_EMAIL": [
+            "admin@enterprisegroupgh.com",
+            "mikeberg.afu@gmail.com"
+        ],
+        "API_DOCS_URL": "https:\/\/anew-parish-register.berg\/api\/documentation",
+        "AUTHOR_URL": null,
+        "LAST_UPDATED": null
+    }
+}

@@ -1,0 +1,2855 @@
+#1 [EMERGENCY] [Sat, 16 10 2021, 20:01:47]
+Error:
+Can't get a previous menu. 'history_bag' is empty. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 1461
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1263): Rejoice\Foundation\Kernel->previousMenuName()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(607): Rejoice\Foundation\Kernel->runPreviousState()
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('__back')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634411622.933726,
+    "user_previous_responses": {
+        "welcome": []
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            },
+            {
+                "display": "Edit Profile",
+                "next_menu": "UserProfile::ShowProfile"
+            },
+            {
+                "display": "Delete profile",
+                "next_menu": "UserProfile::DeleteProfile"
+            }
+        ]
+    },
+    "current_menu_name": "welcome",
+    "id": "1634414497519",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#2 [EMERGENCY] [Sun, 17 10 2021, 00:43:57]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634414510.803465,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "current_menu_name": null,
+    "id": "1634431434439",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#3 [EMERGENCY] [Sun, 17 10 2021, 00:44:01]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634431441.862943,
+    "user_previous_responses": []
+}
+
+#4 [EMERGENCY] [Sun, 17 10 2021, 00:44:05]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634431445.492859,
+    "user_previous_responses": []
+}
+
+#5 [EMERGENCY] [Sun, 17 10 2021, 00:44:10]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634431450.562963,
+    "user_previous_responses": []
+}
+
+#6 [EMERGENCY] [Sun, 17 10 2021, 00:51:57]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634431472.090136,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            },
+            {
+                "display": "Back",
+                "next_menu": "RegisterYouth"
+            }
+        ]
+    },
+    "current_menu_name": null,
+    "id": "1634431917129",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#7 [EMERGENCY] [Sun, 17 10 2021, 00:52:00]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634431920.493228,
+    "user_previous_responses": []
+}
+
+#8 [EMERGENCY] [Sun, 17 10 2021, 00:55:32]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432132.327738,
+    "user_previous_responses": []
+}
+
+#9 [EMERGENCY] [Sun, 17 10 2021, 00:55:35]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432135.912868,
+    "user_previous_responses": []
+}
+
+#10 [EMERGENCY] [Sun, 17 10 2021, 00:55:41]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432141.622648,
+    "user_previous_responses": []
+}
+
+#11 [EMERGENCY] [Sun, 17 10 2021, 00:56:15]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432175.427198,
+    "user_previous_responses": []
+}
+
+#12 [EMERGENCY] [Sun, 17 10 2021, 00:56:26]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432186.729499,
+    "user_previous_responses": []
+}
+
+#13 [EMERGENCY] [Sun, 17 10 2021, 01:05:35]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432682.973822,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Register::Store",
+                "next_menu": "Register::Store"
+            }
+        ]
+    },
+    "current_menu_name": null,
+    "id": "1634432735613",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#14 [EMERGENCY] [Sun, 17 10 2021, 01:05:46]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Welcome' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('welcome')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634432746.638111,
+    "user_previous_responses": []
+}
+
+#15 [EMERGENCY] [Sun, 17 10 2021, 01:21:17]
+Error:
+Call to undefined method App\Menus\Menu::actions() in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php on line 19
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 [internal function]: App\Menus\Welcome->actions(Object(Rejoice\Foundation\UserResponse))
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(895): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1634432815.329417,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": {
+            "payment_option": {
+                "message": "Choose payment mode:",
+                "actions": {
+                    "1": {
+                        "display": "Mobile money"
+                    },
+                    "2": {
+                        "display": "Cheque"
+                    },
+                    "3": {
+                        "display": "Paypal"
+                    }
+                }
+            },
+            "1": {
+                "display": "Mobile money"
+            },
+            "2": {
+                "display": "Cheque"
+            },
+            "3": {
+                "display": "Paypal"
+            }
+        }
+    },
+    "current_menu_name": null,
+    "id": "1634433676901",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#16 [EMERGENCY] [Sun, 17 10 2021, 01:24:32]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634433835.354368,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Next",
+                "next_menu": "Register::Store"
+            }
+        ]
+    },
+    "current_menu_name": null,
+    "id": "1634433872561",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#17 [EMERGENCY] [Sun, 17 10 2021, 01:24:36]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634433876.206843,
+    "user_previous_responses": []
+}
+
+#18 [EMERGENCY] [Sun, 17 10 2021, 01:24:41]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1634433881.097144,
+    "user_previous_responses": []
+}
+
+#19 [EMERGENCY] [Sun, 17 10 2021, 01:51:59]
+Error:
+syntax error, unexpected 'List' (T_LIST), expecting identifier (T_STRING) in file G:\www\anew-parish-youth-register-ussd\app\Menus\Gender\List.php on line 7
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\composer\ClassLoader.php(346): Composer\Autoload\includeFile('G:\\www\\anew-par...')
+
+
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Menus\\Gende...')
+
+
+#2 [internal function]: spl_autoload_call('App\\Menus\\Gende...')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\Menus.php(342): class_exists('App\\Menus\\Gende...')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(501): Rejoice\Menu\Menus->menuStateExists('Gender::List')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1634435396.185858,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "Afu"
+        ],
+        "Registration::OtherName": [
+            "Sitsofe"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1",
+            "1"
+        ],
+        "Registration::Gender": []
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Male",
+                "next_menu": "Gender::List",
+                "save_as": "1"
+            },
+            "2": {
+                "display": "Female",
+                "next_menu": "Gender::List",
+                "save_as": "2"
+            },
+            "0": {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        }
+    },
+    "current_menu_name": "Registration::Gender",
+    "id": "1634435491296",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname",
+        "Registration::OtherName"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#20 [EMERGENCY] [Sun, 17 10 2021, 02:47:43]
+Error:
+Call to undefined function App\Menus\Registration\api_caller() in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php on line 15
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1634438852.798605,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "Afu"
+        ],
+        "Registration::OtherName": [
+            "Sitsofe"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634438848139",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#21 [EMERGENCY] [Sun, 17 10 2021, 02:48:53]
+Error:
+Call to undefined function App\Menus\Registration\api_caller() in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php on line 15
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1634438921.221338,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "Afu"
+        ],
+        "Registration::OtherName": [
+            "asee"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634438917482",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#22 [EMERGENCY] [Sun, 17 10 2021, 03:05:37]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_DEBUG', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_DEBUG')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(16): log_JSON_file(NULL, 'GENDER')
+
+
+#3 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(628): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('__continue_prev...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1634439740.099632,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "Afu"
+        ],
+        "Registration::OtherName": [
+            "Sitsofe"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Continue",
+                "next_menu": "__continue_previous_session"
+            },
+            "2": {
+                "display": "Restart",
+                "next_menu": "__welcome"
+            }
+        }
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::Gender",
+    "id": "1634439934641",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname",
+        "Registration::OtherName"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#23 [EMERGENCY] [Sun, 17 10 2021, 03:06:05]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_DEBUG', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_DEBUG')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(16): log_JSON_file(NULL, 'GENDER')
+
+
+#3 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1634439952.738027,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "ADAD"
+        ],
+        "Registration::OtherName": [
+            "ADDF"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634439952645",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#24 [EMERGENCY] [Sun, 17 10 2021, 03:07:17]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_ENV', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_ENV')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(16): log_JSON_file(NULL, 'GENDER')
+
+
+#3 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1634440028.483609,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "AFDS"
+        ],
+        "Registration::OtherName": [
+            "EBGBDFS"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634440028396",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#25 [EMERGENCY] [Sun, 17 10 2021, 03:10:00]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_ENV', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_ENV')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(16): log_JSON_file(NULL, 'GENDER')
+
+
+#3 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1634440184.865975,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "SDVDSA"
+        ],
+        "Registration::OtherName": [
+            "EFWRDBGD"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634440184757",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#26 [EMERGENCY] [Sun, 17 10 2021, 03:11:16]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_ENV', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_ENV')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(16): log_JSON_file(NULL, 'GENDER')
+
+
+#3 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1634440266.96187,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "dsfbgbds"
+        ],
+        "Registration::OtherName": [
+            "sdfgbdfs"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634440266892",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#27 [EMERGENCY] [Sun, 17 10 2021, 03:12:50]
+Error:
+A facade root has not been set. in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Facades\Facade.php on line 258
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(18): Illuminate\Support\Facades\Facade::__callStatic('info', Array)
+
+
+#1 [internal function]: App\Menus\Registration\Gender->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#10 {main}
+
+User session:
+{
+    "__last_connection": 1634440348.570981,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "dfsd"
+        ],
+        "Registration::OtherName": [
+            "dfsgbffds"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634440359667",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#28 [EMERGENCY] [Sun, 17 10 2021, 03:24:44]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Registration\Gender' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::G...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::G...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(628): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('__continue_prev...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1634440542.975828,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1",
+            "1",
+            "1"
+        ],
+        "Registration::Surname": [
+            "dbgf"
+        ],
+        "Registration::OtherName": [
+            "gfbhg"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Continue",
+                "next_menu": "__continue_previous_session"
+            },
+            "2": {
+                "display": "Restart",
+                "next_menu": "__welcome"
+            }
+        }
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::Gender",
+    "id": "1634441082095",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname",
+        "Registration::OtherName"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#29 [EMERGENCY] [Sun, 17 10 2021, 03:37:21]
+Error:
+A facade root has not been set. in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Facades\Facade.php on line 258
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\app\Helpers\http_utils.php(42): Illuminate\Support\Facades\Facade::__callStatic('withHeaders', Array)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(18): new_api_call()
+
+
+#2 [internal function]: App\Menus\Registration\Gender->message(Object(Rejoice\Foundation\UserResponse))
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(871): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::G...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::G...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(628): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('__continue_prev...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1634441439.464654,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "wqwew"
+        ],
+        "Registration::OtherName": [
+            "ewfgbs"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1",
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Continue",
+                "next_menu": "__continue_previous_session"
+            },
+            "2": {
+                "display": "Restart",
+                "next_menu": "__welcome"
+            }
+        }
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::Gender",
+    "id": "1634441838381",
+    "history_bag": [
+        "welcome",
+        "Registration::Surname",
+        "Registration::OtherName"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#30 [EMERGENCY] [Sun, 17 10 2021, 03:38:59]
+Error:
+Call to undefined method Prinx\Utils\HTTP::withHeaders() in file G:\www\anew-parish-youth-register-ussd\app\Helpers\http_utils.php on line 42
+
+Processing menu: Registration::Gender in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\Gender.php(18): new_api_call()
+
+
+#1 [internal function]: App\Menus\Registration\Gender->message(Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(871): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::G...')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::G...')
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::G...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::G...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#11 {main}
+
+User session:
+{
+    "__last_connection": 1634441925.125364,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Registration::Surname": [
+            "dqewfr"
+        ],
+        "Registration::OtherName": [
+            "rasdgbff"
+        ]
+    },
+    "modify_menus": {
+        "actions": [
+            {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        ]
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Registration::OtherName",
+    "id": "1634441931247",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": [
+        "welcome",
+        "Registration::Surname"
+    ]
+}
+
+#31 [EMERGENCY] [Thu, 28 10 2021, 10:58:40]
+Error:
+No user response associated to the menu "TxtParams::Networks" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Registration::DoRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('TxtParams::Netw...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('TxtParams::Netw...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php(13): Rejoice\Menu\BaseMenu->previousResponses('TxtParams::Netw...')
+
+
+#3 [internal function]: App\Menus\Registration\DoRegister->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::D...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::D...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1635418715.799156,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Register",
+                "next_menu": "Registration::DoRegister",
+                "save_as": "registration"
+            },
+            "2": {
+                "display": "View Status",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "3": {
+                "display": "Add Church Society",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "4": {
+                "display": "Add My Sacrament",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            }
+        }
+    },
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 0,
+    "currentMenuSplitStart": true,
+    "currentMenuSplitEnd": false,
+    "currentMenuChunks": [
+        "Welcome to the Catholic Youth Registration Portal.\n\nSelect a Action to Proceed\n\n1. Register\n2. View Status\n3. Add Church Society\n00. Next page",
+        "4. Add My Sacrament\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "current_menu_name": "welcome",
+    "id": "1635418714460"
+}
+
+#32 [EMERGENCY] [Thu, 28 10 2021, 11:44:51]
+Error:
+STRING OR NON-ASSOCIATIVE ARRAY EXPECTED.
+The method 'message' in class 'App\Menus\Registration\DoRegister' must return a string or a non-associative array, when the menu flow (in resources/menus/menus.php) does not have any message for this menu. Check the documentation to learn more on how to use the 'message' method. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 880
+
+Processing menu: Registration::DoRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::D...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::D...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::D...')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::D...')
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#7 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#8 {main}
+
+User session:
+{
+    "__last_connection": 1635421474.08885,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Register",
+                "next_menu": "Registration::DoRegister",
+                "save_as": "registration"
+            },
+            "2": {
+                "display": "View Status",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "3": {
+                "display": "Add Church Society",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "4": {
+                "display": "Add My Sacrament",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            }
+        }
+    },
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 0,
+    "currentMenuSplitStart": true,
+    "currentMenuSplitEnd": false,
+    "currentMenuChunks": [
+        "Welcome to the Catholic Youth Registration Portal.\n\nSelect a Action to Proceed\n\n1. Register\n2. View Status\n3. Add Church Society\n00. Next page",
+        "4. Add My Sacrament\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "current_menu_name": "welcome",
+    "id": "1635421473993"
+}
+
+#33 [EMERGENCY] [Thu, 28 10 2021, 12:22:09]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::DoRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_ENV', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(10): env('APP_ENV')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php(43): log_JSON_file(Array, 'DD')
+
+
+#3 [internal function]: App\Menus\Registration\DoRegister->message(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(871): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::D...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::D...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::D...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::D...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1635423727.588255,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Register",
+                "next_menu": "Registration::DoRegister",
+                "save_as": "registration"
+            },
+            "2": {
+                "display": "View Status",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "3": {
+                "display": "Add Church Society",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "4": {
+                "display": "Add My Sacrament",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            }
+        }
+    },
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 0,
+    "currentMenuSplitStart": true,
+    "currentMenuSplitEnd": false,
+    "currentMenuChunks": [
+        "Welcome to the Catholic Youth Registration Portal.\n\nSelect a Action to Proceed\n\n1. Register\n2. View Status\n3. Add Church Society\n00. Next page",
+        "4. Add My Sacrament\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "current_menu_name": "welcome",
+    "id": "1635423727512"
+}
+
+#34 [EMERGENCY] [Thu, 28 10 2021, 12:34:42]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::DoRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('APP_ENV', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(7): env('APP_ENV')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php(43): log_JSON_file(Array, 'DD')
+
+
+#3 [internal function]: App\Menus\Registration\DoRegister->message(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(871): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::D...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::D...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::D...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::D...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1635424480.576274,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Register",
+                "next_menu": "Registration::DoRegister",
+                "save_as": "registration"
+            },
+            "2": {
+                "display": "View Status",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "3": {
+                "display": "Add Church Society",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "4": {
+                "display": "Add My Sacrament",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            }
+        }
+    },
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 0,
+    "currentMenuSplitStart": true,
+    "currentMenuSplitEnd": false,
+    "currentMenuChunks": [
+        "Welcome to the Catholic Youth Registration Portal.\n\nSelect a Action to Proceed\n\n1. Register\n2. View Status\n3. Add Church Society\n00. Next page",
+        "4. Add My Sacrament\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "current_menu_name": "welcome",
+    "id": "1635424480498"
+}
+
+#35 [EMERGENCY] [Thu, 28 10 2021, 12:36:43]
+Error:
+Class 'PhpOption\Option' not found in file G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\Env.php on line 76
+
+Processing menu: Registration::DoRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\illuminate\support\helpers.php(132): Illuminate\Support\Env::get('LOG_JSON', NULL)
+
+
+#1 G:\www\anew-parish-youth-register-ussd\app\Helpers\logUtils.php(6): env('LOG_JSON')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Registration\DoRegister.php(43): log_JSON_file(Array, 'DD')
+
+
+#3 [internal function]: App\Menus\Registration\DoRegister->message(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(871): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(999): Rejoice\Foundation\Kernel->messageFromMenuEntity('Registration::D...')
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(934): Rejoice\Foundation\Kernel->menuMessage('Registration::D...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Registration::D...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Registration::D...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1635424601.216904,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Register",
+                "next_menu": "Registration::DoRegister",
+                "save_as": "registration"
+            },
+            "2": {
+                "display": "View Status",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "3": {
+                "display": "Add Church Society",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            },
+            "4": {
+                "display": "Add My Sacrament",
+                "next_menu": "Registration::Surname",
+                "save_as": "registration"
+            }
+        }
+    },
+    "currentMenuSplitted": true,
+    "currentMenuSplitIndex": 0,
+    "currentMenuSplitStart": true,
+    "currentMenuSplitEnd": false,
+    "currentMenuChunks": [
+        "Welcome to the Catholic Youth Registration Portal.\n\nSelect a Action to Proceed\n\n1. Register\n2. View Status\n3. Add Church Society\n00. Next page",
+        "4. Add My Sacrament\n0. Back"
+    ],
+    "currentMenuHasBackAction": false,
+    "current_menu_name": "welcome",
+    "id": "1635424601138"
+}
+
+#36 [EMERGENCY] [Thu, 28 10 2021, 17:48:45]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1635440664.023852,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": null,
+    "id": "1635443325851",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#37 [EMERGENCY] [Thu, 28 10 2021, 17:48:50]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\anew-parish-youth-register-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1107): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(355): Rejoice\Foundation\Kernel->runWelcomeState()
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1635443330.02044,
+    "user_previous_responses": []
+}
+
+#38 [EMERGENCY] [Sun, 31 10 2021, 01:37:06]
+Error:
+No user response associated to the menu "BioData::Surname" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Exits::EndRegister in file G:\www\anew-parish-youth-register-ussd\app\Menus\Exits\EndRegister.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('BioData::Surnam...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('BioData::Surnam...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\Exits\EndRegister.php(14): Rejoice\Menu\BaseMenu->previousResponses('BioData::Surnam...')
+
+
+#3 [internal function]: App\Menus\Exits\EndRegister->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Exits::EndRegis...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Exits::EndRegis...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1635644128.96924,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Location::Diocese": [
+            1
+        ],
+        "Location::Deanery": [
+            1
+        ],
+        "Location::Parish": [
+            1
+        ],
+        "Location::Station": [
+            1
+        ],
+        "App\\Menus\\BioData\\Surname": [
+            "Afu"
+        ],
+        "BioData::OtherName": [
+            "Mike"
+        ],
+        "BioData::Gender": [
+            1
+        ],
+        "BioData::DateOfBirth": [
+            "1992\/01\/02"
+        ],
+        "App\\Menus\\Address\\Email": [
+            "1"
+        ],
+        "Address::DigitalAddress": [
+            "1"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1"
+        ],
+        "Address::ResidentialAddress": [
+            "KKD-A"
+        ],
+        "Address::ResidentialStatus": [
+            1
+        ],
+        "Emergency::ContactName": [
+            "Dodzi"
+        ],
+        "Emergency::ContactNumber": [
+            "0246102017"
+        ],
+        "Emergency::RelationshipType": [
+            1
+        ],
+        "Education::HighestLevel": [
+            1
+        ],
+        "Occupation::Group": [
+            2
+        ],
+        "Addons::Society": [
+            1
+        ],
+        "Addons::Sacrament": [
+            1
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Baptism",
+                "next_menu": "Exits::EndRegister",
+                "save_as": 1
+            },
+            "2": {
+                "display": "Eucharist",
+                "next_menu": "Exits::EndRegister",
+                "save_as": 2
+            },
+            "3": {
+                "display": "Confirmation",
+                "next_menu": "Exits::EndRegister",
+                "save_as": 3
+            },
+            "0": {
+                "display": "Back",
+                "next_menu": "__back"
+            }
+        }
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "Addons::Sacrament",
+    "id": "1635644195234",
+    "history_bag": [
+        "welcome",
+        "Location::Diocese",
+        "Location::Deanery",
+        "Location::Parish",
+        "Location::Station",
+        "App\\Menus\\BioData\\Surname",
+        "BioData::OtherName",
+        "BioData::Gender",
+        "BioData::DateOfBirth",
+        "App\\Menus\\Address\\Email",
+        "Address::DigitalAddress",
+        "Address::ResidentialAddress",
+        "Address::ResidentialStatus",
+        "Emergency::ContactName",
+        "Emergency::ContactNumber",
+        "Emergency::RelationshipType",
+        "Education::HighestLevel",
+        "Occupation::Group",
+        "Addons::Society"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#39 [EMERGENCY] [Sun, 31 10 2021, 01:39:17]
+Error:
+No user response associated to the menu "BioData::Surname" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: BioData::OtherName in file G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('BioData::Surnam...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('BioData::Surnam...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php(13): Rejoice\Menu\BaseMenu->previousResponses('BioData::Surnam...')
+
+
+#3 [internal function]: App\Menus\BioData\OtherName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('BioData::OtherN...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('BioData::OtherN...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1635644339.49217,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Location::Diocese": [
+            1
+        ],
+        "Location::Deanery": [
+            1
+        ],
+        "Location::Parish": [
+            1
+        ],
+        "Location::Station": [
+            1
+        ],
+        "App\\Menus\\BioData\\Surname": [
+            "afu"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "App\\Menus\\BioData\\Surname",
+    "id": "1635644339430",
+    "history_bag": [
+        "welcome",
+        "Location::Diocese",
+        "Location::Deanery",
+        "Location::Parish",
+        "Location::Station"
+    ]
+}
+
+#40 [EMERGENCY] [Sun, 31 10 2021, 01:42:55]
+Error:
+No user response associated to the menu "BioData::Surname" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: BioData::OtherName in file G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('BioData::Surnam...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('BioData::Surnam...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php(13): Rejoice\Menu\BaseMenu->previousResponses('BioData::Surnam...')
+
+
+#3 [internal function]: App\Menus\BioData\OtherName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('BioData::OtherN...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(628): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('__continue_prev...')
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#12 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#13 {main}
+
+User session:
+{
+    "__last_connection": 1635644509.01137,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Location::Diocese": [
+            1
+        ],
+        "Location::Deanery": [
+            1
+        ],
+        "Location::Parish": [
+            1
+        ],
+        "Location::Station": [
+            1
+        ],
+        "App\\Menus\\BioData\\Surname": [
+            "Afu"
+        ],
+        "ask_user_before_reload_previous_session": [
+            "1"
+        ]
+    },
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "Continue",
+                "next_menu": "__continue_previous_session"
+            },
+            "2": {
+                "display": "Restart",
+                "next_menu": "__welcome"
+            }
+        }
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "BioData::OtherName",
+    "id": "1635644572169",
+    "history_bag": [
+        "welcome",
+        "Location::Diocese",
+        "Location::Deanery",
+        "Location::Parish",
+        "Location::Station",
+        "App\\Menus\\BioData\\Surname"
+    ],
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    }
+}
+
+#41 [EMERGENCY] [Sun, 31 10 2021, 01:48:29]
+Error:
+No user response associated to the menu "BioData::Surname" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: BioData::OtherName in file G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('BioData::Surnam...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('BioData::Surnam...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php(13): Rejoice\Menu\BaseMenu->previousResponses('BioData::Surnam...')
+
+
+#3 [internal function]: App\Menus\BioData\OtherName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('BioData::OtherN...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('BioData::OtherN...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1635644897.009163,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Location::Diocese": [
+            1
+        ],
+        "Location::Deanery": [
+            1
+        ],
+        "Location::Parish": [
+            1
+        ],
+        "Location::Station": [
+            1
+        ],
+        "App\\Menus\\BioData\\Surname": [
+            "afu"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "App\\Menus\\BioData\\Surname",
+    "id": "1635644899783",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": [
+        "welcome",
+        "Location::Diocese",
+        "Location::Deanery",
+        "Location::Parish",
+        "Location::Station"
+    ]
+}
+
+#42 [EMERGENCY] [Sun, 31 10 2021, 01:49:40]
+Error:
+No user response associated to the menu "BioData::Surname" in file G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: BioData::OtherName in file G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php
+
+Stack trace:
+
+
+#0 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('BioData::Surnam...')
+
+
+#1 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('BioData::Surnam...')
+
+
+#2 G:\www\anew-parish-youth-register-ussd\app\Menus\BioData\OtherName.php(13): Rejoice\Menu\BaseMenu->previousResponses('BioData::Surnam...')
+
+
+#3 [internal function]: App\Menus\BioData\OtherName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('BioData::OtherN...')
+
+
+#7 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('BioData::OtherN...')
+
+
+#8 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\anew-parish-youth-register-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\anew-parish-youth-register-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1635644968.472809,
+    "user_previous_responses": {
+        "welcome": [
+            "registration"
+        ],
+        "Location::Diocese": [
+            1
+        ],
+        "Location::Deanery": [
+            1
+        ],
+        "Location::Parish": [
+            1
+        ],
+        "Location::Station": [
+            1
+        ],
+        "App\\Menus\\BioData\\Surname": [
+            "Mike"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "currentMenuSplitted": false,
+    "current_menu_name": "App\\Menus\\BioData\\Surname",
+    "id": "1635644968391",
+    "history_bag": [
+        "welcome",
+        "Location::Diocese",
+        "Location::Deanery",
+        "Location::Parish",
+        "Location::Station"
+    ]
+}
+

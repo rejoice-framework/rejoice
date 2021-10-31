@@ -9,4 +9,5 @@ use Rejoice\Menu\BaseMenu;
  */
 class Menu extends BaseMenu
 {
+
 }
