@@ -10,8 +10,9 @@ class Diocese extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('aux-dioceses');
+        $this->resp = get_auxes('aux-dioceses');
     }
+
     public function message()
     {
         return [
@@ -20,19 +21,19 @@ class Diocese extends Menu
             'Select your Diocese',
             '',
         ];
-
     }
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Location::Deanery',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Location::Deanery',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 }

@@ -6,7 +6,6 @@ use App\Menus\Menu;
 
 class Email extends Menu
 {
-
     public function message()
     {
         return [
@@ -15,7 +14,6 @@ class Email extends Menu
             'Enter Email Address (Optional)',
             '',
         ];
-
     }
 
     public function defaultNextMenu()
@@ -26,14 +24,10 @@ class Email extends Menu
     public function actions()
     {
         return $this->withBack([
-            "1"=>[
-                'display'=>'Next',
-                'next_menu'=>'Address::DigitalAddress'
-            ]
+            '1'=> [
+                'display'  => 'Next',
+                'next_menu'=> 'Address::DigitalAddress',
+            ],
         ]);
     }
-
-
-
-
 }

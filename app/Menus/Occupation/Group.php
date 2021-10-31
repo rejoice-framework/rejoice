@@ -10,7 +10,7 @@ class Group extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('aux-occupational-groups');
+        $this->resp = get_auxes('aux-occupational-groups');
 
         //aux-occupational-groups
     }
@@ -23,19 +23,19 @@ class Group extends Menu
             'Select your Occupational Group',
             '',
         ];
-
     }
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Addons::Society',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Addons::Society',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 }

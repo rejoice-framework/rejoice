@@ -14,9 +14,7 @@ class ResidentialAddress extends Menu
             'Enter your Residential Address',
             '',
         ];
-
     }
-
 
     public function defaultNextMenu()
     {

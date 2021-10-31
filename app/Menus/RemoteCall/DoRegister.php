@@ -15,6 +15,7 @@ class DoRegister extends Menu
         $number = $this->previousResponses('TxtParams::Number');
         $amount = $this->previousResponses('TxtParams::Amount');
     }
+
     public function message()
     {
         return [
@@ -23,7 +24,5 @@ class DoRegister extends Menu
             'Select Gender',
             '',
         ];
-
     }
-
 }

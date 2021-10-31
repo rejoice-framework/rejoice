@@ -11,7 +11,7 @@ class Surname extends Menu
         return [
             'Parish Registration',
             '',
-            'Enter your Surname'
+            'Enter your Surname',
         ];
     }
 
@@ -19,7 +19,6 @@ class Surname extends Menu
     {
         return 'BioData::OtherName';
     }
-
 
     public function validate($response)
     {

@@ -10,11 +10,10 @@ class HighestLevel extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('aux-educational-levels');
+        $this->resp = get_auxes('aux-educational-levels');
 
         //aux-occupational-groups
     }
-
 
     public function message()
     {
@@ -24,19 +23,19 @@ class HighestLevel extends Menu
             'Select your Highest Education Level',
             '',
         ];
-
     }
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Occupation::Group',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Occupation::Group',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 }

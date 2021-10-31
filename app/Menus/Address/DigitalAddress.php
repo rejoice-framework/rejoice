@@ -14,7 +14,6 @@ class DigitalAddress extends Menu
             'Enter your Digital Address (Optional)',
             '',
         ];
-
     }
 
     public function defaultNextMenu()
@@ -25,12 +24,10 @@ class DigitalAddress extends Menu
     public function actions()
     {
         return $this->withBack([
-            "1"=>[
-                'display'=>'Next',
-                'next_menu'=>'Address::ResidentialAddress'
-            ]
+            '1'=> [
+                'display'  => 'Next',
+                'next_menu'=> 'Address::ResidentialAddress',
+            ],
         ]);
     }
-
-
 }

@@ -10,7 +10,7 @@ class Sacrament extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('aux-sacraments');
+        $this->resp = get_auxes('aux-sacraments');
 
         //aux-occupational-groups
     }
@@ -23,20 +23,19 @@ class Sacrament extends Menu
             'Select your Sacraments (Optional)',
             '',
         ];
-
     }
-
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Exits::EndRegister',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Exits::EndRegister',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 }

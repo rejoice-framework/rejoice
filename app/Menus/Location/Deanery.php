@@ -12,8 +12,9 @@ class Deanery extends Menu
     {
         $_id = $this->previousResponses('Location::Diocese');
 
-        $this->resp =  get_auxes_by_id('aux-deaneries', $_id);
+        $this->resp = get_auxes_by_id('aux-deaneries', $_id);
     }
+
     public function message()
     {
         return [
@@ -22,19 +23,19 @@ class Deanery extends Menu
             'Select your Deanery',
             '',
         ];
-
     }
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Location::Parish',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Location::Parish',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 }

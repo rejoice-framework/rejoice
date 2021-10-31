@@ -10,8 +10,9 @@ class Gender extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('genders');
+        $this->resp = get_auxes('genders');
     }
+
     public function message()
     {
         return [
@@ -20,21 +21,19 @@ class Gender extends Menu
             'Select your Gender',
             '',
         ];
-
     }
-
 
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'BioData::DateOfBirth',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'BioData::DateOfBirth',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
-
 }

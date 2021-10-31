@@ -1,12 +1,11 @@
 <?php
 
-    namespace App\Menus\Exits;
+namespace App\Menus\Exits;
 
     use App\Menus\Menu;
 
     class EndRegister extends Menu
     {
-
         public function before()
         {
             $responses = $this->previousResponses();
@@ -28,7 +27,7 @@
         {
             return $this->withBack([
                 '1' => [
-                    'display' => 'Exit',
+                    'display'   => 'Exit',
                     'next_menu' => '__end',
                 ],
             ]);

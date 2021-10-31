@@ -14,9 +14,7 @@ class ContactName extends Menu
             'Enter your Emergency Contact Name',
             '',
         ];
-
     }
-
 
     public function defaultNextMenu()
     {

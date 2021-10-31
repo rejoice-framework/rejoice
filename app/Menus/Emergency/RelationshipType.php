@@ -10,8 +10,9 @@ class RelationshipType extends Menu
 
     public function before()
     {
-        $this->resp =  get_auxes('aux-emergency-contact-types');
+        $this->resp = get_auxes('aux-emergency-contact-types');
     }
+
     public function message()
     {
         return [
@@ -20,7 +21,6 @@ class RelationshipType extends Menu
             'Select your Emergency Contact Relationship',
             '',
         ];
-
     }
 
     /* public function defaultNextMenu()
@@ -31,19 +31,19 @@ class RelationshipType extends Menu
     public function actions()
     {
         $actions = [];
-        foreach($this->resp as $key => $datum){
-            $actions[ $key + 1]=[
-                'display'=>$datum['name'],
-                'next_menu'=>'Education::HighestLevel',
-                'save_as'=>$datum['id']
+        foreach ($this->resp as $key => $datum) {
+            $actions[$key + 1] = [
+                'display'  => $datum['name'],
+                'next_menu'=> 'Education::HighestLevel',
+                'save_as'  => $datum['id'],
             ];
         }
+
         return $this->withBack($actions);
     }
 
-
-   /* public function defaultNextMenu()
-    {
-        return 'Education::HighestLevel';
-    }*/
+    /* public function defaultNextMenu()
+     {
+         return 'Education::HighestLevel';
+     }*/
 }
