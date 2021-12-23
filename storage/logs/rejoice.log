@@ -1,0 +1,545 @@
+#1 [EMERGENCY] [Wed, 22 12 2021, 02:52:39]
+Error:
+ARRAY EXPECTED.
+The method 'actions' in class 'App\Menus\Welcome' must return an associative array. in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php on line 900
+
+Processing menu: welcome in file G:\www\nestle-mega-promo-ussd\app\Menus\Welcome.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1060): Rejoice\Foundation\Kernel->actionsFromMenuEntity()
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(935): Rejoice\Foundation\Kernel->menuActions('welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(430): Rejoice\Foundation\Kernel->runState('welcome')
+
+
+#3 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(375): Rejoice\Foundation\Kernel->runPreviousSessionState()
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#6 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#7 {main}
+
+User session:
+{
+    "__last_connection": 1640141490.805786,
+    "user_previous_responses": [],
+    "modify_menus": {
+        "actions": {
+            "1": {
+                "display": "View Status",
+                "next_menu": "Info::RegisterStatus",
+                "save_as": "info"
+            }
+        }
+    },
+    "current_menu_name": null,
+    "id": "1640141559749",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
+#2 [EMERGENCY] [Wed, 22 12 2021, 03:28:44]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(13): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640143720.22636,
+    "user_previous_responses": {
+        "welcome": [
+            "3566"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640143715949"
+}
+
+#3 [EMERGENCY] [Wed, 22 12 2021, 03:29:38]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(13): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640143775.230668,
+    "user_previous_responses": {
+        "welcome": [
+            "66266"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640143775164"
+}
+
+#4 [EMERGENCY] [Wed, 22 12 2021, 03:31:06]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(13): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640143863.239466,
+    "user_previous_responses": {
+        "welcome": [
+            "werds"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640143860764"
+}
+
+#5 [EMERGENCY] [Wed, 22 12 2021, 03:31:40]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(13): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640143898.186189,
+    "user_previous_responses": {
+        "welcome": [
+            "sde.c,df"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640143898102"
+}
+
+#6 [EMERGENCY] [Wed, 22 12 2021, 03:32:13]
+Error:
+Call to undefined function App\Menus\Customer\log_JSON_file() in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php on line 13
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#2 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#3 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#8 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#9 {main}
+
+User session:
+{
+    "__last_connection": 1640143930.453087,
+    "user_previous_responses": {
+        "welcome": [
+            "dsfsa"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640143930376"
+}
+
+#7 [EMERGENCY] [Wed, 22 12 2021, 03:34:22]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(14): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640144059.233416,
+    "user_previous_responses": {
+        "welcome": [
+            "s,snbmn"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640144059150"
+}
+
+#8 [EMERGENCY] [Wed, 22 12 2021, 03:43:36]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(14): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640144613.092302,
+    "user_previous_responses": {
+        "welcome": [
+            "2"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640144612996"
+}
+
+#9 [EMERGENCY] [Wed, 22 12 2021, 03:44:40]
+Error:
+No user response associated to the menu "Welcome" in file G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\UserResponse.php on line 33
+
+Processing menu: Customer::RedeemerName in file G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php
+
+Stack trace:
+
+
+#0 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(1312): Rejoice\Foundation\UserResponse->get('Welcome')
+
+
+#1 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Menu\BaseMenu.php(354): Rejoice\Foundation\Kernel->previousResponses('Welcome')
+
+
+#2 G:\www\nestle-mega-promo-ussd\app\Menus\Customer\RedeemerName.php(14): Rejoice\Menu\BaseMenu->previousResponses('Welcome')
+
+
+#3 [internal function]: App\Menus\Customer\RedeemerName->before(Object(Rejoice\Foundation\UserResponse))
+
+
+#4 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(913): call_user_func(Array, Object(Rejoice\Foundation\UserResponse))
+
+
+#5 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(924): Rejoice\Foundation\Kernel->callBeforeHook()
+
+
+#6 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(640): Rejoice\Foundation\Kernel->runState('Customer::Redee...')
+
+
+#7 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(537): Rejoice\Foundation\Kernel->runAppropriateState('Customer::Redee...')
+
+
+#8 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(365): Rejoice\Foundation\Kernel->processResponse()
+
+
+#9 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\Kernel.php(278): Rejoice\Foundation\Kernel->handleUserRequest()
+
+
+#10 G:\www\nestle-mega-promo-ussd\vendor\rejoice\framework\src\Foundation\App.php(24): Rejoice\Foundation\Kernel->run()
+
+
+#11 G:\www\nestle-mega-promo-ussd\public\index.php(13): Rejoice\Foundation\App::start()
+
+
+#12 {main}
+
+User session:
+{
+    "__last_connection": 1640144620.379235,
+    "user_previous_responses": {
+        "welcome": [
+            "32353"
+        ]
+    },
+    "modify_menus": {
+        "actions": []
+    },
+    "current_menu_name": "welcome",
+    "id": "1640144663667",
+    "session_data_accessible_by_app": {
+        "has_resume_from_previous_session": true
+    },
+    "history_bag": []
+}
+
