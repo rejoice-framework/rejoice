@@ -52,7 +52,6 @@ class RedeemerName extends Menu
                 'Unable to complete the redemption.'
             ]);
         }*/
-
     }
 
     /*public function message($previousResponses)
@@ -67,7 +66,6 @@ class RedeemerName extends Menu
         ];
     }*/
 
-
     public function message()
     {
         return [
@@ -75,7 +73,7 @@ class RedeemerName extends Menu
             'IDEAL 390g',
             '',
             '',
-            'Enter First & Last Names'
+            'Enter First & Last Names',
         ];
     }
 
@@ -83,7 +81,6 @@ class RedeemerName extends Menu
     {
         return 'Customer::PostName';
     }
-
 
     public function validate($response)
     {

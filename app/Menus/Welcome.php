@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\Menus;
+namespace App\Menus;
 
     class Welcome extends Menu
     {
@@ -20,12 +20,10 @@
             return 'Customer::RedeemerName';
         }
 
-
-
         public function validate($response)
         {
             return [
-                'minLen:8'
+                'minLen:8',
             ];
         }
     }

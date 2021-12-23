@@ -1,30 +1,26 @@
 <?php
 
-    namespace App\Helpers;
-
-    use App\Menus\Menu;
-    use function Prinx\Dotenv\env;
+namespace App\Helpers;
 
     class CurlUtils
     {
         public static function callAPI($method, $payload, $endpoint, $headers)
         {
-
             $curl_handle = curl_init();
             switch ($method) {
-                case "POST":
+                case 'POST':
                     curl_setopt($curl_handle, CURLOPT_POST, 1);
                     if ($payload) {
                         curl_setopt($curl_handle, CURLOPT_POSTFIELDS, $payload);
                     }
                     break;
-                case "PUT":
-                    curl_setopt($curl_handle, CURLOPT_CUSTOMREQUEST, "PUT");
+                case 'PUT':
+                    curl_setopt($curl_handle, CURLOPT_CUSTOMREQUEST, 'PUT');
                     if ($payload) {
                         curl_setopt($curl_handle, CURLOPT_POSTFIELDS, $payload);
                     }
                     break;
-                case "GET":
+                case 'GET':
                     if ($payload) {
                         curl_setopt($curl_handle, CURLOPT_POSTFIELDS, $payload);
                     }
@@ -41,6 +37,7 @@
             $result = curl_exec($curl_handle);
             $err = curl_error($curl_handle);
             curl_close($curl_handle);
+
             return $result;
         }
     }
